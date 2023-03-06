@@ -1,5 +1,5 @@
 {
-  "name": "test-junit-reporter",
+  "name": "node-test-junit-reporter",
   "version": "1.0.0",
   "description": "JUnit test reporter for the Node.js test runner",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nearform/test-junit-reporter.git"
+    "url": "git+https://github.com/nearform/node-test-junit-reporter.git"
   },
   "keywords": ["test", "junit", "reporter"],
   "author": {
@@ -22,9 +22,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nearform/test-junit-reporter/issues"
+    "url": "https://github.com/nearform/node-test-junit-reporter/issues"
   },
-  "homepage": "https://github.com/nearform/test-junit-reporter#readme",
+  "homepage": "https://github.com/nearform/node-test-junit-reporter#readme",
   "dependencies": {
     "strip-ansi": "^7.0.1",
     "xml": "^1.0.1"
