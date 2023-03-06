@@ -1,12 +1,10 @@
 import assert from 'node:assert'
 import test from 'node:test'
-import buildReportData from '../../lib/build-report-data.js'
 import buildXml from '../../lib/build-xml.js'
-import mockedSource from '../resources/mocked-source.js'
+import mockedReportData from '../resources/mocked-report-data.js'
 
 test('validates built xml', async () => {
-  const reportData = await buildReportData(mockedSource)
-  const xml = buildXml(reportData)
+  const xml = buildXml(mockedReportData)
 
   assert.strictEqual(
     xml,
