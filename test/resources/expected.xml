@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="node tests" time="431.794458" tests="6" errors="2" failures="1">
+  <testsuite name="/node-test-junit-reporter/test/resources/sample-tests/broken.test.js" time="45.072708" tests="1" errors="1" failures="0" skipped="0">
+    <testcase name="calls a nonexistent method" time="0.617625">
+      <error>nonexistentMethod is not defined
+
+Stack:
+    at Object.&lt;anonymous&gt; (file:///node-test-junit-reporter/test/resources/sample-tests/broken.test.js:5:3)
+    at ItTest.runInAsyncScope (node:async_hooks:203:9)
+    at ItTest.run (node:internal/test_runner/test:549:25)
+    at ItTest.start (node:internal/test_runner/test:465:17)
+    at run (node:internal/test_runner/harness:180:15)
+    at cb (node:internal/test_runner/harness:185:5)
+    at file:///node-test-junit-reporter/test/resources/sample-tests/broken.test.js:3:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="/node-test-junit-reporter/test/resources/sample-tests/nested.test.js" time="43.468916" tests="2" errors="0" failures="1" skipped="0">
+    <testcase name="module function behavior asserts 1 === 1" time="0.114917">
+    </testcase>
+    <testcase name="module function behavior fails" time="0.694125">
+      <failure>Expected values to be strictly equal:
+
+1 !== 2
+
+
+Stack:
+    at Object.&lt;anonymous&gt; (file:///node-test-junit-reporter/test/resources/sample-tests/nested.test.js:12:16)
+    at ItTest.runInAsyncScope (node:async_hooks:203:9)
+    at ItTest.run (node:internal/test_runner/test:549:25)
+    at Suite.processPendingSubtests (node:internal/test_runner/test:304:27)
+    at ItTest.postRun (node:internal/test_runner/test:634:19)
+    at ItTest.run (node:internal/test_runner/test:577:10)
+    at async Promise.all (index 0)
+    at async Suite.run (node:internal/test_runner/test:805:7)
+    at async Promise.all (index 0)
+    at async Suite.run (node:internal/test_runner/test:805:7)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="/node-test-junit-reporter/test/resources/sample-tests/skip.test.js" time="40.609666" tests="1" errors="0" failures="0" skipped="1">
+    <testcase name="behavior skipped test" time="0.200208">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="/node-test-junit-reporter/test/resources/sample-tests/timeout.test.js" time="243.912875" tests="1" errors="1" failures="0" skipped="0">
+    <testcase name="callback timing out" time="101.772542">
+      <error>test timed out after 100ms</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="/node-test-junit-reporter/test/resources/sample-tests/todo.test.js" time="57.217042" tests="1" errors="0" failures="0" skipped="0">
+    <testcase name="my pending test eventually it will assert something" time="0.179292">
+    </testcase>
+  </testsuite>
+</testsuites>

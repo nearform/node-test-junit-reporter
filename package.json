@@ -1,25 +1,35 @@
 {
-  "name": "bench-template",
+  "name": "node-test-junit-reporter",
   "version": "1.0.0",
-  "description": "Template to start a new repository on the bench",
+  "description": "JUnit test reporter for the Node.js test runner",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "node --test --test-reporter spec ./test/unit",
+    "test:e2e": "./test/e2e/validate.sh && ./test/e2e/compare.sh",
     "prepare": "husky install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nearform/bench-template.git"
+    "url": "git+https://github.com/nearform/node-test-junit-reporter.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["test", "junit", "reporter"],
+  "author": {
+    "name": "Romulo Vitoi",
+    "email": "romulo.vitoi@nearform.com"
+  },
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nearform/bench-template/issues"
+    "url": "https://github.com/nearform/node-test-junit-reporter/issues"
   },
-  "homepage": "https://github.com/nearform/bench-template#readme",
+  "homepage": "https://github.com/nearform/node-test-junit-reporter#readme",
+  "dependencies": {
+    "node-test-parser": "git://github.com/nearform/node-test-parser.git",
+    "strip-ansi": "^7.0.1",
+    "xml": "^1.0.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
