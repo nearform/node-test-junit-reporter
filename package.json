@@ -1,6 +1,6 @@
 {
   "name": "node-test-junit-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JUnit test reporter for the Node.js test runner",
   "main": "index.js",
   "type": "module",
@@ -15,7 +15,11 @@
     "type": "git",
     "url": "git+https://github.com/nearform/node-test-junit-reporter.git"
   },
-  "keywords": ["test", "junit", "reporter"],
+  "keywords": [
+    "test",
+    "junit",
+    "reporter"
+  ],
   "author": {
     "name": "Romulo Vitoi",
     "email": "romulo.vitoi@nearform.com"
