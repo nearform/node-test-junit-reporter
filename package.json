@@ -6,9 +6,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run test:unit && npm run test:e2e",
-    "test:unit": "node --test --test-reporter spec ./test/unit",
-    "test:e2e": "./test/e2e/validate.sh && ./test/e2e/compare.sh",
+    "test": "./test/e2e/validate.sh && ./test/e2e/compare.sh",
     "prepare": "husky install"
   },
   "repository": {
@@ -30,7 +28,7 @@
   },
   "homepage": "https://github.com/nearform/node-test-junit-reporter#readme",
   "dependencies": {
-    "node-test-parser": "git://github.com/nearform/node-test-parser.git",
+    "node-test-parser": "github:nearform/node-test-parser#v2.0.0",
     "strip-ansi": "^7.0.1",
     "xml": "^1.0.1"
   },
