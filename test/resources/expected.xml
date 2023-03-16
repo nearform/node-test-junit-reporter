@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites name="node tests" time="431.390667" tests="6" errors="2" failures="1">
-  <testsuite name="node tests" time="431.390667" tests="6" errors="2" failures="1">
+  <testsuite name="node tests" time="431.390667" tests="6" errors="2" failures="1" skipped="1">
     <testcase name="calls a nonexistent method" time="0.632708">
       <error>nonexistentMethod is not defined
 
