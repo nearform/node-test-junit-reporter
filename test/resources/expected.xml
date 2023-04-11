@@ -1,43 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="node tests" time="431.390667" tests="6" errors="2" failures="1">
-  <testsuite name="node tests" time="431.390667" tests="6" errors="2" failures="1" skipped="1">
-    <testcase name="calls a nonexistent method" time="0.632708">
+<testsuites name="node tests" time="447.319667" tests="6" errors="2" failures="1">
+  <testsuite name="node tests" time="447.319667" tests="6" errors="2" failures="1" skipped="1">
+    <testcase name="calls a nonexistent method" time="0.530625">
       <error>nonexistentMethod is not defined
 
 Stack:
-    at TestContext.&lt;anonymous&gt; (file:///test/resources/sample-tests/broken.test.js:5:3)
-    at Test.runInAsyncScope (node:async_hooks:203:9)
-    at Test.run (node:internal/test_runner/test:547:25)
-    at Test.start (node:internal/test_runner/test:463:17)
-    at startSubtest (node:internal/test_runner/harness:192:17)</error>
+TestContext.&lt;anonymous&gt; (file://test/resources/sample-tests/broken.test.js:5:3)
+</error>
     </testcase>
-    <testcase name="module function behavior asserts 1 === 1" time="0.136125">
+    <testcase name="module function behavior asserts 1 === 1" time="0.128125">
     </testcase>
-    <testcase name="module function behavior fails" time="0.739">
+    <testcase name="module function behavior fails" time="0.873042">
       <failure>Expected values to be strictly equal:
 
 1 !== 2
 
 
 Stack:
-    at TestContext.&lt;anonymous&gt; (file:///test/resources/sample-tests/nested.test.js:12:16)
-    at Test.runInAsyncScope (node:async_hooks:203:9)
-    at Test.run (node:internal/test_runner/test:547:25)
-    at Suite.processPendingSubtests (node:internal/test_runner/test:300:27)
-    at Test.postRun (node:internal/test_runner/test:637:19)
-    at Test.run (node:internal/test_runner/test:575:10)
-    at async Promise.all (index 0)
-    at async Suite.run (node:internal/test_runner/test:801:7)
-    at async Promise.all (index 0)
-    at async Suite.run (node:internal/test_runner/test:801:7)</failure>
+TestContext.&lt;anonymous&gt; (file://test/resources/sample-tests/nested.test.js:12:16)
+async Promise.all (index 0)
+async Promise.all (index 0)
+</failure>
     </testcase>
-    <testcase name="behavior skipped test" time="0.144958">
+    <testcase name="behavior skipped test" time="0.144542">
       <skipped/>
     </testcase>
-    <testcase name="callback timing out" time="102.506583">
+    <testcase name="callback timing out" time="101.436583">
       <error>test timed out after 100ms</error>
     </testcase>
-    <testcase name="my pending test eventually it will assert something" time="0.15275">
+    <testcase name="my pending test eventually it will assert something" time="0.181833">
     </testcase>
   </testsuite>
 </testsuites>

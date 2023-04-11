@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-# Function to replace test duration with 0 and remove file paths
+# Function to replace test duration with 0
 remove_variables() {
-  echo "$1" | sed -E 's/time=\"[0-9\.]+\"/time=\"0\"/g' | sed -E 's/\/.*\/test\//test\//g'
+  echo "$1" | sed -E 's/time=\"[0-9\.]+\"/time=\"0\"/g'
 }
 
 # Run sample tests and generate the report, ignoring errors
