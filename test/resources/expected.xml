@@ -5,7 +5,7 @@
       <error>nonexistentMethod is not defined
 
 Stack:
-TestContext.&lt;anonymous&gt; (file:///test/resources/sample-tests/broken.test.js:5:3)
+TestContext.&lt;anonymous&gt; (file://test/resources/sample-tests/broken.test.js:5:3)
 </error>
     </testcase>
     <testcase name="module function behavior asserts 1 === 1" time="0.128125">
@@ -18,7 +18,7 @@ TestContext.&lt;anonymous&gt; (file:///test/resources/sample-tests/broken.test.j
 
 Stack:
 1 !== 2
-    TestContext.&lt;anonymous&gt; (file:///test/resources/sample-tests/nested.test.js:12:16)
+    TestContext.&lt;anonymous&gt; (file://test/resources/sample-tests/nested.test.js:12:16)
     async Promise.all (index 0)
     async Promise.all (index 0)
 </failure>

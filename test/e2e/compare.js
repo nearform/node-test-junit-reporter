@@ -19,9 +19,9 @@ try {
 const expected = readFileSync('./test/resources/expected.xml', 'utf8')
 
 assert.strictEqual(
-  removeVariables(report),
+  removeVariables(report).replace(/file:\/\/\//g, 'file://'),
   removeVariables(expected).replace(/\n$/g, ''),
-  'Test output does NOT match expected results. ❌'
+  'Test output does NOT match expected results ❌'
 )
 
-console.log('Test output matches expected results. ✅')
+console.log('Test output matches expected results ✅')

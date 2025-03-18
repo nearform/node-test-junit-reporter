@@ -11,10 +11,12 @@ try {
     report = error.stdout || ''
   }
 
+  const escapeChar = process.platform === 'win32' ? '"' : "'"
+
   // Validate report against schema
   try {
     execSync(
-      `echo "${report}" | xmllint --schema ./test/resources/junit.xsd --noout -`,
+      `echo ${escapeChar}${report}${escapeChar} | xmllint --schema ./test/resources/junit.xsd --noout -`,
       { stdio: 'inherit' }
     )
     console.log('Report is valid ✅')
