@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "test": "./test/e2e/validate.sh && ./test/e2e/compare.sh",
+    "test:internal": "node --test --test-reporter ./index.js **/*.test.js",
+    "test": "node test/e2e/validate.js && node test/e2e/compare.js",
     "prepare": "husky"
   },
   "repository": {
@@ -28,7 +29,7 @@
   },
   "homepage": "https://github.com/nearform/node-test-junit-reporter#readme",
   "dependencies": {
-    "node-test-parser": "github:nearform/node-test-parser#v2.2.1",
+    "node-test-parser": "^3.0.0",
     "stack-utils": "^2.0.6",
     "strip-ansi": "^7.1.0",
     "xml": "^1.0.1"
