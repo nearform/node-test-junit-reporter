@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint .",
     "test:internal": "node --test --test-reporter ./index.js **/*.test.js",
-    "test": "node test/e2e/validate.js && node test/e2e/compare.js",
+    "test": "node test/e2e/validate.js && node test/e2e/compare.js && node test/e2e/compare-time.js",
     "prepare": "husky"
   },
   "repository": {
