@@ -35,7 +35,7 @@
     "xml": "^1.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.5",
+    "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^18.4.4",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^9.0.0",
