@@ -6,7 +6,7 @@ import assert from 'node:assert'
 const removeVariables = input => input.replace(/time="[0-9.]+"/g, 'time="0"')
 
 // Run sample tests and generate the report, ignoring errors
-let report = ''
+let report
 try {
   report = execSync('node --test --test-reporter ./index.js **/*.test.js', {
     encoding: 'utf8'
