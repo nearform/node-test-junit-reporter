@@ -20,7 +20,7 @@ try {
       { stdio: 'inherit' }
     )
     console.log('Report is valid ✅')
-  } catch (error) {
+  } catch {
     console.error('Report validation failed ❌')
     process.exit(1)
   }
